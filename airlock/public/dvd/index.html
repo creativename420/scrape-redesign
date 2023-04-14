@@ -1,0 +1,111 @@
+<html>
+  <head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5711731110622653"
+     crossorigin="anonymous"></script>
+  </head>
+  <title>DVD Screensaver 5</title>
+<script>
+// Here are the initial values for our animation. 
+var x = 0, y = 0, w=220, h=200;  // Window position and size
+var dx = 5, dy = 5;              // Window velocity   
+var interval = 20;              // Milliseconds between updates
+
+// Create the window that we're going to move around.
+// The javascript: URL is simply a way to display a short document.
+// The final argument specifies the window size.
+var win = window.open('javascript:""', "", 
+          "width=" + w + ",height=" + h);
+
+          win.document.write('<style> body { background-color: black; } </style> <body> <img src="./dvd.gif" width=200 /> </body>');
+
+// Set the initial position of the window.
+win.moveTo(x,y);
+
+// Use setInterval() to call the bounce() method every interval 
+// milliseconds. Store the return value so that we can stop the
+// animation by passing it to clearInterval().
+var intervalID  = window.setInterval("bounce()", interval);
+
+// This function moves the window by (dx, dy) every interval ms.
+// It bounces whenever the window reaches the edge of the screen.
+function bounce() {
+    // If the user closed the window, stop the animation.
+    if (win.closed) {
+        clearInterval(intervalID);
+        return;
+    }
+
+    // Bounce if we have reached the right or left edge.
+    if ((x+dx > (screen.availWidth - w)) || (x+dx < 0)) dx = -dx;
+
+    // Bounce if we have reached the bottom or top edge.
+    if ((y+dy > (screen.availHeight - h)) || (y+dy < 0)) dy = -dy;
+
+    // Update the current position of the window.
+    x += dx;
+    y += dy;
+
+    // Finally, move the window to the new position.
+    win.moveTo(x,y);
+}
+</script>
+    <link href="/css/ice.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/site.css" rel="stylesheet" type="text/css"/>
+  <script src="/css/ice.js"></script>
+    <script src="/css/site.js"></script>
+      <script src="/js/j.query.js"></script>
+  <link rel="icon" type="image/x-icon" href="/favi/favicon.png">
+  <nav class="navbar">
+    <a href="https://scrape-muse.moogle2.repl.co/airlock/">    <img src="https://scrape-muse.moogle2.repl.co/favi/s.png"width="32" 
+     height="32"/> </a>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><img src="https://hitwebcounter.com/counter/counter.php?page=8058985&style=0007&nbdigits=5&type=page&initCount=0" title="a visit counter" Alt="web counter"   border="0"/></a> </li>
+          <li><input type="button" value="cloak" onclick="anti();">
+</li>
+          <li class="nav-dropdown">
+            <a href="public/g/">gameg</a>
+            <ul class="dropdown">
+              <li><a href="https://gm.moogle2.repl.co/webretro/games.html">emulators</a></li>
+              <li><a href="public/flash/flash/">flash</a></li>
+              <li><a href="https://gm.moogle2.repl.co/downloads/download.html">file games</a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScwkV218pZWoYSTDPOiSva_RV80C5TA3vY6CHdo0igimF_4Ew/viewform">suggestions</a></li>
+              <li><a href="https://portal.kanyewest9.repl.co">portal</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown"><a href="">other</a>
+          <ul class="dropdown">
+<li><a href="/airlock/public/dvd/">dvd</a></li> 
+<li><a href="/airlock/public/brainpower/">brain power</a></li> 
+<li><a href="/airlock/public/slime/">slime</a></li>
+<li><a href="/airlock/public/yrni/">you are an idiot</a></li> 
+<li><a href="/airlock/public/booking/booking.html">bookmarklets</a></li> 
+          </ul>
+          </li>
+          <li><a href="https://scrape-muse.moogle2.repl.co/airlock/#">shows and movies</a></li>
+        </div>
+      </ul>
+    </nav>
+
+<!-- Clicking this button stops the animation! -->
+  <form>
+<input type="button" value="Stop" 
+       onclick="clearInterval(intervalID); win.close();">
+</form>
+  <button class="button" onClick="window.location.href='dvd10.html';"> 
+     <span class="icon">Speed 10</span>
+</button>
+  <button class="button" onClick="window.location.href='dvd25.html';"> 
+     <span class="icon">Speed 25</span>
+</button>
+    <button class="button" onClick="window.location.href='dvd50.html';"> 
+     <span class="icon">Speed 50</span>
+</button>
+    <button class="button" onClick="window.location.href='dvd100.html';"> 
+     <span class="icon">Speed 100</span>
+</button>
+</html>
+
+           

@@ -1,0 +1,67 @@
+<title>BRAIN POWER!</title>
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5711731110622653"
+     crossorigin="anonymous"></script>
+</head>
+
+<button>BRAIN POWER!</button><br><br>
+<script>
+alert("To stop the page, Exit or Refresh the tab.")
+const audio = new Audio("audio.mp3");
+const buttons = document.querySelectorAll("button");
+
+function DROP() {
+document.write( '<html>\n' );
+document.write( '\n' );
+document.write( '<script>\n' );
+document.write( 'var x = 0, y = 0, w=220, h=250;\n' );
+document.write( 'var dx = 50, dy = 50;\n' );
+document.write( 'var interval = 1;\n' );
+document.write( '\n' );
+document.write( 'var win = window.open(\'javascript:\"\"\', \"\", \n' );
+document.write( '          \"width=\" + w + \",height=\" + h);\n' );
+document.write( '\n' );
+document.write( '          win.document.write(\'<body style=\"background-color:black;\"><center><h1 style=\"font-size:100px;\">🧠</h1></center></body>\');\n' );
+document.write( '\n' );
+document.write( 'win.moveTo(x,y);\n' );
+document.write( '\n' );
+document.write( 'var intervalID  = window.setInterval(\"bounce()\", interval);\n' );
+document.write( '\n' );
+document.write( 'function bounce() {\n' );
+document.write( '\n' );
+document.write( '    if ((x+dx > (screen.availWidth - w)) || (x+dx < 0)) dx = -dx;\n' );
+document.write( '\n' );
+document.write( '    if ((y+dy > (screen.availHeight - h)) || (y+dy < 0)) dy = -dy;\n' );
+document.write( '\n' );
+document.write( '    x += dx;\n' );
+document.write( '    y += dy;\n' );
+document.write( '\n' );
+document.write( '    win.moveTo(x,y);\n' );
+document.write( '}\n' );
+document.write( '</\script>\n' );
+document.write( '\n' );
+document.write( '<form>\n' );
+document.write( '</form>\n' );
+document.write('  <input type="button" value="go back" onclick="history.go(-1)">')
+document.write( '</html>\n' );
+};
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+    document.write( '<script>\n' );
+document.write( 'setTimeout(\'document.write(`<body style=\"background-color:blue;\"><center><br><br><br><br><h1 style=\"color:white;font-size:100px;\">BRAIN<br>POWER!</h1></center></body>`)\', 0)\n' );
+document.write( 'setTimeout(\"document.body.innerHTML = \'\';\", 2000)\n' );
+document.write( 'setTimeout(\'document.write(`<body style=\"background-color:yellow;\"><center><br><br><br><br><h1 style=\"color:white;font-size:100px;\">LET</h1></center></body>`)\', 2000)\n' );
+document.write( 'setTimeout(\"document.body.innerHTML = \'\';\", 2500)\n' );
+document.write( 'setTimeout(\'document.write(`<body style=\"background-color:pink;\"><center><br><br><br><br><h1 style=\"color:white;font-size:100px;\">THE</h1></center></body>`)\', 2500)\n' );
+document.write( 'setTimeout(\"document.body.innerHTML = \'\';\", 2800)\n' );
+document.write( 'setTimeout(\'document.write(`<body style=\"background-color:cyan;\"><center><br><br><br><br><h1 style=\"color:white;font-size:100px;\">BASS</h1></center></body>`)\', 2800)\n' );
+document.write( 'setTimeout(\"document.body.innerHTML = \'\';\", 3300)\n' );
+document.write( 'setTimeout(\'document.write(`<body style=\"background-color:red;\"><center><br><br><br><br><h1 style=\"color:white;font-size:100px;\">KICK</h1></center></body>`)\', 3300)\n' );
+document.write( 'setTimeout(\"document.body.innerHTML = \'\';\", 3700)\n' );
+document.write( '</\script>' );
+    setTimeout("DROP()", 3700)
+  });
+});
+</script>
